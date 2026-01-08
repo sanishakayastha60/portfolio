@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.accordion{
+    background:#f3f4f6;
+    border-radius:8px;
+    padding:0.5rem 0.8rem;
+    margin:0.5rem 0.5rem 0.5rem 0;
+}
+.heading{
+}
+.title{
+    color:#4a7c59;
+    font-family: "Press Start 2P", system-ui;
+    font-size:.6rem;
+}
+.arrow{
+    float:right;
+    padding:4px 0;
+}
+.child{
+    border-top: 1px solid gray;
+}
