@@ -9,18 +9,18 @@ const Technologies = ({title, strength}:TechnologyProps) => {
     <div>
       <div>{title}</div>
       <div>{strength}</div>
-      <div class="loading-container">
-        <div className="loading-bar"></div>
+      <div className="loading-container">
+        <div className="loading-bar" style={{width:`${strength}%`,background:'pink'}}></div>
         </div>
     </div>
-  )
+  );
 }
 const Skills = () => {
   return (
     <div>
-      <div>
-        <Technologies title="Frontend Development" strength="90"/>
-        <Technologies title="React & TypeScript" strength="90"/>
+      <div className="techSet">
+        <Technologies title="Frontend Development" strength="10"/>
+        <Technologies title="React & TypeScript" strength="50"/>
         <Technologies title="UI/UX Design" strength="90"/>
       </div>
       <div className="skillSet">

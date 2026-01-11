@@ -3,12 +3,13 @@ import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import AccordionItem from './AccordionItem'
+import AccordionItem from './AccordionItem';
+import ReactImg from './assets/react.svg';
 function App() {
   return (
     <div className="container">
       <div className="left-container">
-        <img src="" alt="me" />
+        <img src={ReactImg} alt="me" />
       </div>
       <div className="right-container">
         <AccordionItem title="About Me">

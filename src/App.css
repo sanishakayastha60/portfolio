@@ -3,16 +3,23 @@
   height: 100vh;
   display:flex;
   gap:20px;
+  overflow: hidden;
 }
 .left-container{
-  background:black;
   flex:1;
 }
 .right-container{
   flex:1;
+  display:flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-top:25vh;
 }
 /* About Me */
-.characters span, .skillSet span{
+.characters span, 
+.skillSet span, 
+.projectTech , 
+.contactLink button{
   background:#4a7c59;
   color:white;
   font-size:12px;
@@ -31,9 +38,42 @@
   overflow:hidden;
 }
 .loading-bar{
-  width:90%;
   height:100%;
   background-color:#4caf50;
   transition:width 2s ease;
   border-radius:10px;
+}
+.techSet{
+  padding:1rem 0;
+}
+/* Projects */
+.project-container{
+  height:300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.projectInfo{
+    background: rgb(211, 205, 205);
+  border-radius: 8px;
+  padding:0 .5rem;
+  margin:8px;
+}
+
+/* Contact */
+.gmailLink{
+  background:rgb(211, 205, 205);
+  border-radius: 8px;
+  margin: 10px 0;
+  padding:8px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:auto;
+}
+.linkToMail{
+  font-size: .8rem;
+    color:black;
+}
+.mail{
+   padding: 0 10px ;
 }
